@@ -5,7 +5,7 @@ import sys
 # imreadについて : https://kuroro.blog/python/wqh9VIEmRXS4ZAA7C4wd/
 # 第一引数 : 画像のファイルパス
 # 戻り値 : 行 x 列 x 色の三次元配列(numpy.ndarray)が返される。
-img = cv2.imread('./xxx.xxx')
+img = cv2.imread('./sample.jpg')
 
 # 画像ファイルが正常に読み込めなかった場合、プログラムを終了する。
 if img is None:
@@ -18,7 +18,7 @@ if img is None:
 # <第五引数以降(順不同、任意)>
 # thickness : 矩形の線の太さ(px)を指定する。int型。デフォルト(thicknessを指定しない場合)は1が設定される。
 # 負の整数(-1, -3など)を与えると、線で囲まれる矩形の、中の塗りつぶしを行います。
-cv2.rectangle(img, (200, 180), (10, 30), (255, 0, 0), thickness=-1)
+cv2.rectangle(img, (400, 300), (200, 180), (255, 0, 0), thickness=-1)
 
 # imwrite : 画像の保存を行う関数
 # 第一引数 : 保存先の画像ファイル名
